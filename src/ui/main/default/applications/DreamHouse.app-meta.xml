@@ -6,5 +6,4 @@
     <label>DreamHouse</label>
     <tab>Property__c</tab>
     <tab>Broker__c</tab>
-    <tab>Property_Explorer</tab>
 </CustomApplication>
