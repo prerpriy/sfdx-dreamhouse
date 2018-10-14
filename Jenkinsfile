@@ -8,8 +8,8 @@ node {
 
     def HUB_ORG = "prerna.aug@gmail.com"
     def SFDC_HOST = "https://fighter-x-wing-412410.lightning.force.com"
-    def JWT_KEY_CRED_ID = "b501b314-b91f-4f12-aa11-992d26a48eb6"
-    def CONNECTED_APP_CONSUMER_KEY="3MVG9YDQS5WtC11pmw5uXT8W4ok0F5lJSPwRsMIRSMWiVUwwhxlsgmFLc6laWNHjXRDOYdf_IYJUpZfckK_PT"
+    def JWT_KEY_CRED_ID = "a01be6cf-e42c-446e-81cb-0404c79da36c"
+    def CONNECTED_APP_CONSUMER_KEY="3MVG9YDQS5WtC11pmw5uXT8W4oix0Imxv3lynRuDN9f4T1sU8R.CqExluPeEZXt2TdFtauf8_L_rqu8JEjyZb"
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
     def toolbelt = tool 'toolbelt'
