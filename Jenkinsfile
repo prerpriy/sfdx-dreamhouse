@@ -8,7 +8,7 @@ node {
 
     def HUB_ORG = "prerna.aug@gmail.com"
     def SFDC_HOST = "https://fighter-x-wing-412410.lightning.force.com"
-    def JWT_KEY_CRED_ID = "a01be6cf-e42c-446e-81cb-0404c79da36c"
+    def JWT_KEY_CRED_ID = "7f6f6789-efb6-4fb3-96c9-7bb9ef628dae"
     def CONNECTED_APP_CONSUMER_KEY="3MVG9YDQS5WtC11pmw5uXT8W4oix0Imxv3lynRuDN9f4T1sU8R.CqExluPeEZXt2TdFtauf8_L_rqu8JEjyZb"
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
@@ -24,7 +24,7 @@ node {
             if (isUnix()) {
                 rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             }else{
-                 rc = bat returnStatus: true, script:"${toolbelt} force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile C:/openssl/server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+                 rc = bat returnStatus: true, script:"${toolbelt} force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
                        println('executed executed!')
 
             }
